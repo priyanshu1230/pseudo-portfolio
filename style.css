@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E1E1DB;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* My portfolio */
+.text1{
+    text-align: end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    margin-top: 0;
+    flex-basis: 1200px;
+    /* display: inline-block; */
+}
+/* grid container */
+.g-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr; 
+    
+}
+/* my photo */
+.myphoto{
+  border-radius: 50%;
+  padding-left: 30px;
+}
+/* hello im priyanshu */
+.g-item2 > h2{
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 5rem;
+   text-align: start;
+   font-weight: lighter;
+   padding-top: 20px;
+}
+/* about me */
+.text2{
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+/* flex box */
+.flex-container{
+    display: flex;
+    justify-content: flex-end; 
+}
+/* My Education heading */
+.education{
+    font-size: 4.5rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* grid container 2  */
+.g-container2{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 2fr;
+}
+/* school image */
+.school{
+    padding-left: 100px;
+}
+/* school text */
+.text3{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+/* college text */
+.text4{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+ 
+}
+/* college photo */
+.college{
+  padding-left: 100px;
+
+}
+/* progress text */
+.progress{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -30px ;
+}
+/* 2 flexbox */
+.flex-container2{
+    display: flex;
+    justify-content: flex-end;
+}
+/* work experience heading */
+.experience{
+    font-size: 4.5rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* 3 grid container */
+.g-container3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+/* bank logo */
+.banklogo{
+    padding-right: 55px;
+    padding-left: 100px;
+}
+/* company logo */
+.company{
+    padding-left: 100px;
+    padding-right: 55px;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+
+.myname::before{
+    content: '<>';
+}
+.myname::after{
+    content: '</>';
+}
+/* contact me section */
+.grid-container4{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 0.25fr;
+}
+/* heading */
+.Contact{
+    font-size: 9rem;
+    padding-left: 100px;
+}
+
+.g1{
+    grid-area: 1 / 1 / 2 /3;
+}
+/* contact me button */
+button{
+    border: 3px solid black;
+    border-radius: 3px;
+    font-size: 2em;
+    background-color: #E1E1DB;
+    padding: 20px 10px;
+    
+}
+
+button:hover{
+    color: rgb(255, 255, 255);
+}
+.contactme{
+    margin-left: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px){
+     body{
+        text-align: center;
+     }
+    .g-container{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.5fr 1fr;
+    }
+    .g-item2{
+        text-align: center;
+    }
+    .g-item2 > h2{
+        text-align: center;
+        font-size: 2.5rem;
+        
+    }
+    .text1{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .text2{
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    .myphoto{
+        height: 350px;
+        width: 400px;
+        
+    }
+    .flex-container{
+        justify-content: center;
+    }
+    .education{
+        font-size: 2.5rem;   
+    }
+    .g-container2{
+        display: grid;
+        grid-template-rows:1fr 1fr ;
+        grid-template-columns: 1fr;
+    }
+    .school{
+        padding-left: 10px;
+    }
+    .college{
+        padding-left: 30px;
+    }
+    .experience{
+        font-size: 2.5rem;
+        
+    }
+    .flex-container2{
+        justify-content: center;
+    }
+    .g-container3{
+        grid-template-columns: 1fr;
+        grid-template-rows :1fr 1fr  ;
+    }
+    .banklogo{
+        padding-left: 70px;
+    }
+    .company{
+        padding-left: 70px;
+    }
+    .contactme{
+        width: 100%;
+        font-size: 4rem;
+    }
+    .flex-container3{
+        justify-content: flex-start;
+    }
+    
+    .grid-container4{
+        grid-template-columns: minmax(200px, 400px);
+        grid-template-rows: 1fr;
+    }
+    .Contact{
+        padding-left: 1em;
+        font-size: 5rem;
+        text-align: left;
+    }
+    .g1{
+        width: 100%;
+        grid-area: 1 / 1 / 2 /3;
+    }
+    .g2{
+        width: 100%;
+    }
+    
+    .contactme{
+        font-size: 2.5em;
+        margin-left: 100px;
+        padding: 10px 40px;
+
+
+    }
+    
+   
+}   
